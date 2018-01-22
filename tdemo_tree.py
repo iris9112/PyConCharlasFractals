@@ -38,6 +38,7 @@ def tree(plist, l, a, f):
 
 def maketree():
     p = Turtle()
+    p.pensize(3)
     p.setundobuffer(None)
     p.hideturtle()
     p.speed(0)
@@ -61,3 +62,4 @@ if __name__ == "__main__":
     msg = main()
     print(msg)
     mainloop()
+
