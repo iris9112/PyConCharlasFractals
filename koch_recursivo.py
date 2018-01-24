@@ -5,14 +5,14 @@ from turtle import *
 def koch(a, order):
     if order > 0:
         # A line Koch for the first generation
-        for t in [60, -120, 60, 0]:
+        for i in [60, -120, 60, 0]:
             koch(a/3, order-1)
-            left(t)
+            left(i)
     else:
         forward(a)
 
-size = 400
-order = 2
+size = 200
+order = 3
 
 def koch_curve(s, o):    
     # Choose colours and size    
@@ -38,4 +38,5 @@ koch_curve(size, order)
 
 # Make the last parts appear
 update()
+mainloop()
 

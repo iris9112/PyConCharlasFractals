@@ -1,4 +1,4 @@
-import turtle
+import turtle as t
 
 def setTurtle(myTuple):
     t.up()
@@ -23,32 +23,31 @@ def make_fractal(length,langle,rangle,iterations,axiom,target,replace,target2,re
                 nextState += character
         state = nextState
 
-    t.down() #pen down
-    t.color('green','black')
-
-    for move in state: #another way to loop through all the characters in a string
+    for move in state: 
         if move == '[':
             turtleState.append((t.xcor(),t.ycor(),t.heading()))
         elif move == ']':
             setTurtle(turtleState.pop())
         elif move == "F":
             t.forward(length)
-        elif move == "L":
+        elif move == "-":
             t.left(langle)
-        elif move == "R":
+        elif move == "+":
             t.right(rangle)
 
 if __name__ == '__main__':
-    iterations = 10#int(input("Enter the number of generations: "))
-    myLen = 100#int(input("Enter the forward movement length: "))
-    t = turtle.Turtle()
-    t.speed(0)
-    turtle.bgcolor('black')
-    setTurtle((0,-250,90))
-
-    #Simple plant
-    make_fractal(myLen,25,25,iterations,'F','F','F[RF]F[LF]F','','')
+    iterations = 5
+    myLen = 20
     
-    #JP curve drawing
-    #make_fractal(myLen,90,90,iterations,'FX','X','XRYFR','Y','LFXLY')
+    t.speed(0)
+    w = myLen * (2 ** iterations - 1)
 
+    t.setup(width=w,height=w,startx=0,starty=0)
+    setTurtle((-t.window_width()/2,t.window_height()/2,0))
+    t.setup(width=w*1.2,height=w*1.2,startx=0,starty=0)
+
+    #Hilbert Curve
+    make_fractal(myLen,90,90,iterations,'L','L','+RF-LFL-FR+','R','-LF+RFR+FL-')
+    t.mainloop()
+
+   

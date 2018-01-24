@@ -6,7 +6,7 @@ iterations = 3 #the number of generations
 startLength = 200 #Length of the generation 0 line
 
 #pick the pen up and move cursor to a good starting point
-turtle.up()
+turtle.penup()
 turtle.setpos(-startLength*3/2,startLength*3/2/2)
 turtle.speed(0)
 
@@ -14,7 +14,7 @@ turtle.speed(0)
 for i in range(iterations):
     koch = koch.replace("F","FLFRFLF")
 
-turtle.down() #pen down
+turtle.pendown() #pen down
 turtle.color('black','skyblue') #draw line in black, fill skyblue
 turtle.begin_fill() #set the fill setting
 
@@ -27,5 +27,5 @@ for move in koch: #another way to loop through all the characters in a string
         turtle.right(120)
 
 turtle.end_fill() #fill any enclosed areas
-
+turtle.mainloop()
 

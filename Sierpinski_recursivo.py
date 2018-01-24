@@ -1,23 +1,23 @@
 import turtle
 
 def sierpinski(side, level):
-    turtle.color('black','skyblue')
+    turtle.color('green','green')
     turtle.begin_fill()
     if level == 1:
         for i in range(3):
-            turtle.fd(side)
+            turtle.forward(side)
             turtle.left(120)
     else:
         sierpinski(side/2, level-1)
-        turtle.fd(side/2)
+        turtle.forward(side/2)
         sierpinski(side/2, level-1)
-        turtle.bk(side/2)
+        turtle.backward(side/2)
         turtle.left(60)
-        turtle.fd(side/2)
+        turtle.forward(side/2)
         turtle.right(60)
         sierpinski(side/2, level-1)
         turtle.left(60)
-        turtle.bk(side/2)
+        turtle.backward(side/2)
         turtle.right(60)
     turtle.end_fill()
 
