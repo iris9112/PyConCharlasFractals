@@ -1,9 +1,8 @@
 import turtle
 
-iterations = 3 #the number of generations
+iterations = 5 #the number of generations
 startLength = 200 #Length of the generation 0 line
 
-#pick the pen up and move cursor to a good starting point
 turtle.up()
 turtle.setpos(-startLength*3/2,0)
 turtle.speed(0)
@@ -15,17 +14,19 @@ Dragon = "F"
 for i in range(iterations):
     Dragon = Dragon.replace("F","FLFRFRFFLFLFRF")
 
-turtle.down() #pen down
-turtle.color('red','red') #draw line in red, fill black
-turtle.begin_fill() #set the fill setting
+turtle.down() 
+turtle.color('red')
+turtle.begin_fill()
 
-for move in Dragon: #another way to loop through all the characters in a string
-    if move == "F":
+for char in Dragon: 
+#another way to loop through all the characters in a string
+    if char == "F":
         turtle.forward(startLength / (4 ** (iterations - 1)))
-    elif move == "L":
+    elif char == "L":
         turtle.left(90)
-    elif move == "R":
+    elif char == "R":
         turtle.right(90)
 
-turtle.end_fill() #fill any enclosed areas
+turtle.end_fill() 
 turtle.mainloop()
+

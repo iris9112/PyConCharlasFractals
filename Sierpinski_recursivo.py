@@ -1,7 +1,7 @@
 import turtle
 
 def sierpinski(side, level):
-    turtle.color('green','green')
+    turtle.color('green')
     turtle.begin_fill()
     if level == 1:
         for i in range(3):

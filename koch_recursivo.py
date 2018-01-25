@@ -11,30 +11,22 @@ def koch(a, order):
     else:
         forward(a)
 
-size = 200
-order = 3
-
-def koch_curve(s, o):    
+def koch_curve(size, order):    
     # Choose colours and size    
     color('black', 'skyblue')
-    
     # Ensure snowflake is centered
     penup()
-    backward(size/1.732)
+    backward(size/1.5)
     left(60)
     pendown()
-    
     begin_fill() #set the fill setting
-    
     # Koch curve
     for i in range(3):
-        koch(s, o)
+        koch(size, order)
         right(120)
-    
     end_fill() #fill any enclosed areas
-
     
-koch_curve(size, order)    
+koch_curve(300, 3)    
 
 # Make the last parts appear
 update()

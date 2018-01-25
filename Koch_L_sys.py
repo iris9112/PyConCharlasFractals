@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import turtle
 
-koch = 'FRFRF' # axiom for koch snowflake
+koch = 'FRFRF' # axiom for Koch snowflake
 iterations = 3 #the number of generations
 startLength = 200 #Length of the generation 0 line
 
@@ -14,11 +14,12 @@ turtle.speed(0)
 for i in range(iterations):
     koch = koch.replace("F","FLFRFLF")
 
-turtle.pendown() #pen down
-turtle.color('black','skyblue') #draw line in black, fill skyblue
-turtle.begin_fill() #set the fill setting
+turtle.pendown() 
+#draw line in black, fill sky blue
+turtle.color('black','skyblue') 
+turtle.begin_fill() 
 
-for move in koch: #another way to loop through all the characters in a string
+for move in koch: 
     if move == "F":
         turtle.forward(startLength / (3 ** (iterations - 1)))
     elif move == "L":
