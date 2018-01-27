@@ -2,7 +2,7 @@
 """
 Created on Thu Jan 11 17:30:26 2018
 
-@author: 
+@author: iris
 """
 
 import numpy as np
@@ -11,7 +11,7 @@ import matplotlib.cm as cm
 
 # Image width and height; parameters for the plot
 im_width, im_height = 500, 500
-c = complex(-0.1, 0.65)
+c = complex(-0.05, 0.68)
 zabs_max = 10
 nit_max = 3000
 xmin, xmax = -1.5, 1.5

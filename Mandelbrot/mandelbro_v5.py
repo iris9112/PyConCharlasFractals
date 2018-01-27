@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-import numba
+
 
 # Graficando el conjunto de Mandelbrot 
 def mandelbrot( h,w, maxit=20 ):
@@ -19,6 +19,8 @@ def mandelbrot( h,w, maxit=20 ):
         
     return divtime
 
+	
+	
 plt.figure(figsize=(8,8))
-plt.imshow(mandelbrot(2000,2000))
+plt.imshow(mandelbrot(2000,2000),cmap=plt.cm.inferno)
 plt.show()
