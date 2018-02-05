@@ -1,27 +1,32 @@
 # -*- coding: utf-8 -*-
 import turtle
 
-turtle.left(90)
-turtle.color('green')
-turtle.pensize(5)
-
-def arbol(tam, prof):
+def tree(size, level):
+    turtle.color('green')
+    turtle.pensize(2)
     turtle.speed(0)
-    if prof == 0:
+	
+    if level == 0:
         return
     else:
-        turtle.forward(tam)
+        turtle.forward(size)
         turtle.left(45)
-        arbol(tam*2/3, prof-1)
+        tree(size*2/3, level-1)
         turtle.right(90)
-        arbol(tam*2/3, prof-1)
+        tree(size*2/3, level-1)
         turtle.left(45)
-        turtle.back(tam)
+        turtle.backward(size)
 
-arbol(100, 12)        
+turtle.left(90)
+tree(100, 7)        
 turtle.mainloop()
 
 
 
 
 
+
+		
+		
+	
+	
