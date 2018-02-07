@@ -2,7 +2,7 @@
 """
 Created on Wed Jan 17 13:24:26 2018
 
-@author: Usuario
+@author: iris9112
 """
 
 import matplotlib.pyplot as plt
@@ -31,36 +31,35 @@ N = 1024
 # Dimensioned numbers of the set
 j = np.zeros((N, N), np.int64)
 # constant of the set
-#c = np.complex(0.2,0.75)
-c = np.complex(0.285, 0.01)
-#c = np.complex(-1.037,0.17)
+c = np.complex(-1.037,0.17)
 z_real = np.linspace(-2.5, 2.5, N)
 z_imag = np.linspace(-2.5, 2.5, N)
 
 # call the function
 jit_julia_fractal(z_real, z_imag, j, c)
 
+# plot the fig 
+fig, ax = plt.subplots(figsize=(8, 8))
+ax.imshow(j, cmap=plt.cm.inferno, extent=[-2.5, 2.5, -2.5, 2.5])
+ax.set_title('Conjunto de Julia para c='+str(c),fontsize=18)
+ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
+ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
+plt.show()
+
+fig, ax = plt.subplots(figsize=(8, 8))
+ax.imshow(j, cmap=plt.cm.hot, extent=[-2.5, 2.5, -2.5, 2.5])
+ax.set_title('Conjunto de Julia para c='+str(c),fontsize=18)
+ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
+ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
+plt.show()
 
 # plot the fig 
 fig, ax = plt.subplots(figsize=(8, 8))
-ax.imshow(j, cmap=plt.cm.inferno, extent=[-1.5, 1.5, -1.5, 1.5])
-ax.set_title('Conjunto de Julia para c='+str(c),fontsize=18)
-ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
-ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
-plt.show()
-
-fig, ax = plt.subplots(figsize=(8, 8))
-ax.imshow(j, cmap=plt.cm.jet, extent=[-1.5, 1.5, -1.5, 1.5])
-ax.set_title('Conjunto de Julia para c='+str(c),fontsize=18)
-ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
-ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
+ax.imshow(j, cmap=plt.cm.inferno)
+ax.set_title('Conjunto de Julia para c='+str(c))
 plt.show()
 
 
-fig, ax = plt.subplots(figsize=(8, 8))
-ax.imshow(j, cmap=plt.cm.hot, extent=[-1.5, 1.5, -1.5, 1.5])
-ax.set_title('Conjunto de Julia para c='+str(c),fontsize=18)
-ax.set_xlabel("$\mathrm{Re}(z)$", fontsize=18)
-ax.set_ylabel("$\mathrm{Im}(z)$", fontsize=18)
-plt.show()
+
+
 

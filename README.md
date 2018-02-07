@@ -1,63 +1,43 @@
 Fractals and Python
-==========
+===============================
 
-Repository of the presentation * Painting the chaos with Python * for PyCon Colombia 2018. 
-contiene multiples ejemplos para la generación de fractals, el codigo es de diferentes autores y algunos propios, 
-Esto es solo una guia basica, sientete libre de modificar, aportar y adicionar nuevos ejemplos al reposotorio
+Repository of the presentation * Painting the chaos with Python * for PyCon Colombia 2018.
+This contains multiple examples for the generation of fractals, the code is from different authors and some of its own,
+This is just a basic guide, feel free to modify, add and add new examples to the reposotorio
 
 The Python version is:
 
-´´´
-Python 3.6.0 de la instalación de Anaconda 4.3.1
-´´´
+	```
+Python 3.6.0 of the installation of Anaconda 4.3.1
+	```
 
 Previous Definitions
 --------------------
 
-+ tdemo_###: Codigo de ejemplo de la suite de Python
-+ size, side, length:  
-+ level, order, profundidad, iterations:
-+ langle, rangle:
-+ axiom:
-+ target:
-+ replace: 
++ tdemo_###: Example code for the Python suite
++ size, side, length: It is the number of pixels from one side of the fractal   
++ level, order, profundidad, iterations: number of times a recursive call of a function is made
++ langle, rangle: left angle, right angle
++ For L-System:
+    - Alphabet: consists of the valid characters that can be included
+    - axiom: statement describing the initial state of the system.
+    - target: characters that can be replace 
+    - replace: it apply rules to replace the axiom and then applied recursively
 
 Deterministic fractals 
 --------------------
-
-Así se crean secciones y subsecciones. Para crear una enumeración utilizamos:
-+ Elemento 1
-+ Elemento 2
-+ Elemento 3
++ Tree fractal
++ Barnsley
++ set Cantor
++ dragon fractal and JPdragon
++ Hilbert curve
++ Snowflake of koch
++ Sierpinski fractal
 
 Stochastic Fractals
 --------------------
-+ Folder Sierpinski: diferentes implementaciones del algoritmo de Sierpinski
-+ Folder Julia
-+ Folder Mandelbrot
++ Folder Sierpinski: different implementations of the Sierpinski fractal
++ Folder Julia: different implementations of the Julia fractal
++ Folder Mandelbrot: different implementations of the Mandelbrot fractal
++ Folder examples_Ludger_Sandig: code for free software Apollon, for generate Apollonian Gaskets 
 
-
-	```
-	*storyboard, outside RKSwipeBetweenViewControllers.m*
-	(if your viewcontrollers are on the storyboard, but make sure to give them storyboard IDs)
-	
-	```objc
-	UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-	    UIViewController* theController = [storyboard instantiateViewControllerWithIdentifier:@"storyboardID"];
-	
-	    [theCustomViewController.viewControllerArray addObject:theController];
-	```
-
-# My new project
-
-## Introduction
-
-> An introduction or lead on what problem you're solving. Answer the question, "Why does someone need this?"
-
-## Code Samples
-
-> You've gotten their attention in the introduction, now show a few code examples. So they get a visualization and as a bonus, make them copy/paste friendly.
-
-## Installation
-
-> The installation instructions are low priority in the readme and should come at the bottom. The first part answers all their objections and now that they want to use it, show them how.
