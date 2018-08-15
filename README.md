@@ -7,9 +7,9 @@ This is just a basic guide, feel free to modify, add and add new examples to the
 
 The Python version is:
 
-	```
+```
 Python 3.6.0 of the installation of Anaconda 4.3.1
-	```
+```
 
 Previous Definitions
 --------------------
