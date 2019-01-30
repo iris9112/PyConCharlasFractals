@@ -41,3 +41,7 @@ Stochastic Fractals
 + Folder Mandelbrot: different implementations of the Mandelbrot fractal
 + Folder examples_Ludger_Sandig: code for free software Apollon, for generate Apollonian Gaskets 
 
+Link charla
+---------------------
+
+[pintando-el-caos-con-python](https://2018.pycon.co/es/ponencias/pintando-el-caos-con-python/)
