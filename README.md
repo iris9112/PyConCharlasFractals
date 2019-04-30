@@ -1,47 +1,31 @@
-Fractals and Python
-===============================
+# Pintando el Caos con python
 
-Repository of the presentation * Painting the chaos with Python * for PyCon Colombia 2018.
-This contains multiple examples for the generation of fractals, the code is from different authors and some of its own,
-This is just a basic guide, feel free to modify, add and add new examples to the reposotorio
+Este repositorio contiene ejemplos de generación de fractales. El código es de diferentes autores, algunos son propios, unos métodos son mejores que otros, más simples o más optimos, todo con la finalidad de comparar, explorar y aprender.
 
-The Python version is:
+## Fractal
 
-```
-Python 3.6.0 of the installation of Anaconda 4.3.1
-```
+Un fractal es un patrón sin fin que se repite a diferentes escalas. Esta propiedad se llama "auto-similitud".
+Los fractales son extremadamente complejos, a veces infinitamente complejos, lo que significa que puede ampliar y encontrar las mismas formas para siempre. Sorprendentemente, la matemática detrás de los fractales es generalmente muy simple.
 
-Previous Definitions
---------------------
+### Características de una figura para ser fractal
 
-+ tdemo_###: Example code for the Python suite
-+ size, side, length: It is the number of pixels from one side of the fractal   
-+ level, order, profundidad, iterations: number of times a recursive call of a function is made
-+ langle, rangle: left angle, right angle
-+ For L-System:
-    - Alphabet: consists of the valid characters that can be included
-    - axiom: statement describing the initial state of the system.
-    - target: characters that can be replace 
-    - replace: it apply rules to replace the axiom and then applied recursively
+1. Auto similitud
+  * Es autosimilar (exacta, aproximada o estadística)
+  * Una parte es una copia a menor escala del conjunto entero, a menudo con variaciones
+2. Dimensión Fractal
+  * Es demasiado irregular para ser descrito en términos geométricos tradicionales
+  * Su dimensión de Hausdorff-Besicovitch es estrictamente mayor que su dimensión topológica. (Es un número racional que se encuentra entre el primer- 1D y segundo plano – 2D)
+3. Función recursiva
+  * Se define mediante un simple algoritmo recursivo.
 
-Deterministic fractals 
---------------------
-+ Tree fractal
-+ Barnsley
-+ set Cantor
-+ dragon fractal and JPdragon
-+ Hilbert curve
-+ Snowflake of koch
-+ Sierpinski fractal
+## Versiones
 
-Stochastic Fractals
---------------------
-+ Folder Sierpinski: different implementations of the Sierpinski fractal
-+ Folder Julia: different implementations of the Julia fractal
-+ Folder Mandelbrot: different implementations of the Mandelbrot fractal
-+ Folder examples_Ludger_Sandig: code for free software Apollon, for generate Apollonian Gaskets 
+[PyCon Colombia, Feb 2018, Medellín - Colombia](https://2018.pycon.co/es/ponencias/pintando-el-caos-con-python/)
 
-Link charla
----------------------
+[PyCon Charlas, May 2019, Cleveland - EEUU](https://us.pycon.org/2019/schedule/presentation/340/)
 
-[pintando-el-caos-con-python](https://2018.pycon.co/es/ponencias/pintando-el-caos-con-python/)
+## Enlaces Diapositivas
+
+[PyCon Co](https://docs.google.com/presentation/d/1vPM93bleead0IjyRKXevNKDWPC--KC-nwd7Ix-DgJ_U/edit?usp=sharing)
+
+[PyCon USA](#TODO)
