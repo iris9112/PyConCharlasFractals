@@ -28,4 +28,4 @@ Los fractales son extremadamente complejos, a veces infinitamente complejos, lo 
 
 [PyCon Co](https://docs.google.com/presentation/d/1vPM93bleead0IjyRKXevNKDWPC--KC-nwd7Ix-DgJ_U/edit?usp=sharing)
 
-[PyCon USA](#TODO)
+[PyCon USA](https://docs.google.com/presentation/d/1Ap9Zx7i2wTxwxRH_toI8ssKnFf8KJcXUVqEzBLWBQMA/edit?usp=sharing)
