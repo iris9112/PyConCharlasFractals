@@ -34,7 +34,7 @@ def main():
     turtle.up()
     turtle.setpos(-myLen/2,-myLen/2)
     turtle.down()
-    sierpinski(myLen, 2)
+    sierpinski(myLen, 5)
 
 if __name__ == '__main__':
     main()
